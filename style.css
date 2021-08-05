@@ -1,0 +1,93 @@
+/* STYLING FOR ALL PAGES*/
+
+nav {
+    background-color: #574842;
+    padding: 0px;
+    margin-bottom: 10px;   
+}
+
+
+body {
+    background-color: #ad9a8a;
+    margin: 0;
+    padding: 0;
+    display: grid;   
+}
+
+footer {
+    padding: 5px;
+    background-color: #574842;
+    color: white;
+}
+
+/* STYLING FOR PORTFOLIO IMAGES*/
+
+.myimages {
+    display: flex;
+    overflow: hidden;
+    height: 50vw;
+    background: #4b3e39;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.myimages img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 2px solid #605049;
+    box-sizing: border-box;
+    transition: opacity .2s;
+}
+
+.myimages:hover img {
+    opacity: 0.4
+}
+
+.myimages img:hover {
+    opacity: 1
+}
+
+.first-column {
+    animation: var(--animation, none) 16s infinite linear
+}
+
+.first-column:hover {
+    animation-play-state: paused
+}
+
+.first-column:nth-of-type(odd) {
+    align-self: flex-end;
+    --direction: 50%
+}
+
+@keyframes slide {
+    to {
+        -webkit-transform: translateY(var(--direction, -50%));
+        transform: translateY(var(--direction, -50%))
+    }
+}
+
+/* STYLING FOR FORMS*/
+
+.form {
+    display: block;
+    text-align: center;
+}
+
+/* STYLING FOR ABOUT ME PAGE*/
+
+.col-sm-4 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* STYLING FOR HOME PAGE*/
+
+#carouselExampleIndicators {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    text-align: center;
+}
